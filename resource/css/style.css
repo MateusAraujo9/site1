@@ -170,3 +170,41 @@ body{
 #checktitle{
 	color: #72b1d4;
 }
+.conteudoint{
+	width: 100%;
+	height: 656px;
+}
+.conteudo{
+	padding-top: 40px;
+	padding-bottom: 60px;
+	margin: auto;
+	max-width: 1170px;
+	height: 656px;
+	display: flex;
+	justify-content: space-between;
+}
+.conteudoNot{
+	flex:1;
+	max-width: 370px;
+	background-color: burlywood;
+}
+#corporate{
+	max-height: 220px;
+	max-width: 370px;
+}
+.titulo{
+	color: #777777;
+}
+.texto{
+	color: #b1b1b1;
+	line-height: 22px;
+	font-size: 13px;
+	margin-bottom: 40px;
+	margin-bottom: 40px;
+}
+.botao{
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #63c1e7;
+	padding: 18px 30px 18px 30px;
+}
