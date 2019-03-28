@@ -186,7 +186,6 @@ body{
 .conteudoNot{
 	flex:1;
 	max-width: 370px;
-	background-color: burlywood;
 }
 #corporate{
 	max-height: 220px;
@@ -200,11 +199,39 @@ body{
 	line-height: 22px;
 	font-size: 13px;
 	margin-bottom: 40px;
-	margin-bottom: 40px;
 }
 .botao{
 	text-decoration: none;
 	color: #FFFFFF;
 	background-color: #63c1e7;
 	padding: 18px 30px 18px 30px;
+}
+.item{
+	color: #6ebee3;
+	font-size: 15px;
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.meio{
+	margin-bottom: 10px;
+}
+.lista{
+	margin-bottom: 40px;
+}
+.check{
+	background-color: transparent;
+	width: 21px;
+	margin-right: 20px;
+}
+.rodapeint{
+    width: 100%;
+    height: 395px;
+    background-color: #444549;
+    margin-top: 750px;
+}
+.rodape{
+    margin: auto;
+    max-width: 1170px;
+    height: 395px;
 }
