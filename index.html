@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="meuApp">
 <head>
 	<meta charset="utf-8">
 	<title>index</title>
 	<link rel="stylesheet" type="text/css" href="resource\css\style.css">
-	<script type="text/javascript" src="resource\js\script.js"></script>
+	<script src="resource/js/angular.js"></script>
+	<script src="resource/js/angular-route.js"></script>
+	<script type="text/javascript" src="resource/js/script.js"></script>
 </head>
-<body>
+<body ng-app="meuApp">
 	<header class="topint">
 		<div class="top">
 			<div class="topleft"><span class="logo">Mecer</span> Company</div>
@@ -18,140 +20,18 @@
 	</header>
 	<nav class="navint">
 		<nav class="nav">
-			<ul>
-				<li class="check">HOME</li>
-				<li>SOBRE</li>
-				<li>IDEIAS</li>
-				<li>ACADEMICOS</li>
-				<li>CADASTRO</li>
+			<ul id="navmenu">
+				<a href="#/!"><li class="check" onclick="trocaCor(this)">HOME</li></a>
+				<a href="#!sobre"><li onclick="trocaCor(this)">SOBRE</li></a>
+				<a href="#!ideias"><li onclick="trocaCor(this)">IDEIAS</li></a>
+				<a href="#!academicos"><li onclick="trocaCor(this)">ACADEMICOS</li></a>
+				<a href="#!cadastro"><li onclick="trocaCor(this)">CADASTRO</li></a>
 			</ul>
 		</nav>
 	</nav>
-	<section class="banner">
-		<img src="resource\imagens\banner.png">
-	</section>
-	<section class="menubannerint">
-		<div class="menubanner">
-			<div class="menubanneritem" style="background-color: #57a9ce">
-				<img src="resource\imagens\world.png" width="56px">
-				<h4>Global <br>research</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem felis, dapibus eu feugiat ut, commodo fermentum diam.</p>
-			</div>
-			<div class="menubanneritem" style="background-color: #54b0d5">
-				<img src="resource\imagens\lamp.png" width="56px">
-				<h4>Creative <br>ideas</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem felis, dapibus eu feugiat ut, commodo fermentum diam.</p>
-			</div>
-			<div class="menubanneritem" style="background-color: #5ab6dd">
-				<img src="resource\imagens\engrenagem.png" width="56px">
-				<h4>New <br>Services</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem felis, dapibus eu feugiat ut, commodo fermentum diam.</p>
-			</div>
-			<div class="menubanneritem" style="background-color: #63c1e7">
-				<img src="resource\imagens\mala.png" width="56px">
-				<h4>Pro <br>management</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem felis, dapibus eu feugiat ut, commodo fermentum diam.</p>
-			</div>
-		</div>
-	</section>
-	<section class="botoesint">
-		<div class="botoes">
-			<div class="coluna">
-				<div class="linha up">
-					<div>
-						<img src="resource\imagens\baloes.jpg" width="100px">
-					</div>
-					<div class="botoesconteudo">
-						<h4 id="checktitle">Lorem ipsum dolor sit amet</h4>
-						<p>consectetur adipiscing elit. Nunc lorem felis, dapibus eu feugiat ut, commodo fermentum diam. Suspendisse potenti. Nullam ligula dolor, pretium pellentesque pretium eu,</p>
-					</div>
-				</div>
-				<div class="linha">
-					<div>
-						<img src="resource\imagens\calendario.jpg" width="100px">
-					</div>
-					<div class="botoesconteudo">
-						<h4>Lorem ipsum dolor sit amet</h4>
-						<p>consectetur adipiscing elit. Nunc lorem felis, dapibus eu feugiat ut, commodo fermentum diam. Suspendisse potenti. Nullam ligula dolor, pretium pellentesque pretium eu,</p>
-					</div>
-				</div>
-			</div>
-			<div class="coluna">
-				<div class="linha up">
-					<div>
-						<img src="resource\imagens\pessoas.jpg" width="100px">
-					</div>
-					<div class="botoesconteudo">
-						<h4>Lorem ipsum dolor sit amet</h4>
-						<p>consectetur adipiscing elit. Nunc lorem felis, dapibus eu feugiat ut, commodo fermentum diam. Suspendisse potenti. Nullam ligula dolor, pretium pellentesque pretium eu,</p>
-					</div>
-				</div>
-				<div class="linha">
-					<div>
-						<img src="resource\imagens\like.jpg" width="100px">
-					</div>
-					<div class="botoesconteudo">
-						<h4>Lorem ipsum dolor sit amet</h4>
-						<p>consectetur adipiscing elit. Nunc lorem felis, dapibus eu feugiat ut, commodo fermentum diam. Suspendisse potenti. Nullam ligula dolor, pretium pellentesque pretium eu,</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<section class="conteudoint">
-			<div class="conteudo">
-				<div class="conteudoNot">
-                    <h2 class="titulo">About</h2>
-                    <img src="resource/imagens/corporate.jpg" alt="corporate" id="corporate">
-                    <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fermentum nulla elit. Mauris varius arcu feugiat ligula dictum, sit amet egestas massa facilisis. Vivamus eget accumsan dolor, vel volutpat libero. Donec quis volutpat tellus. Vivamus porta metus id pharetra volutpat. Ut efficitur cursus sem, eget commodo justo. Morbi sagittis, tellus vitae dictum pharetra, elit neque maximus orci, dignissim euismod arcu metus ac ipsum. Donec tincidunt mi ac bibendum tincidunt. In tincidunt scelerisque diam, Ut efficitur cursus sem, eget commodo justo. Morbi sagittis, tellus vitae dictum pharetra, elit neque maximus orci, dignissim euismod arcu metus ac ipsum. Donec tincidunt mi ac bibendum tincidunt. In tincidunt scelerisque diam. Morbi sagittis</p>
-                    <a href="#" class="botao">READ MORE</a>
-                </div>
-				<div class="conteudoNot">
-                    <h2 class="titulo">Services</h2>
-                    <p class="texto meio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fermentum nulla elit. Mauris varius arcu feugiat ligula dictum Nunc lorem felis, dapibus eu feugiat ut, commodo fermentum diam.</p>
-                    <div class="lista">
-						<div class="item">
-							<img src="resource/imagens/checkedG.png" alt="checked" class="checked">
-							<span>Lorem ipsum dolor sit amet.</span>
-						</div>
-						<div class="item">
-							<img src="resource/imagens/checkedB.png" alt="checked" class="checked">
-							<span>Lorem ipsum dolor sit amet.</span>
-						</div>
-						<div class="item">
-							<img src="resource/imagens/checkedB.png" alt="checked" class="checked">
-							<span>Lorem ipsum dolor sit amet.</span>
-						</div>
-						<div class="item">
-							<img src="resource/imagens/checkedB.png" alt="checked" class="checked">
-							<span>Lorem ipsum dolor sit amet.</span>
-						</div>
-						<div class="item">
-							<img src="resource/imagens/checkedB.png" alt="checked" class="checked">
-							<span>Lorem ipsum dolor sit amet.</span>
-						</div>
-						<div class="item">
-							<img src="resource/imagens/checkedB.png" alt="checked" class="checked">
-							<span>Lorem ipsum dolor sit amet.</span>
-						</div>
-						<div class="item">
-							<img src="resource/imagens/checkedB.png" alt="checked" class="checked">
-							<span>Lorem ipsum dolor sit amet.</span>
-						</div>
-						<div class="item">
-							<img src="resource/imagens/checkedB.png" alt="checked" class="checked">
-							<span>Lorem ipsum dolor sit amet.</span>
-						</div>
-						<div class="item">
-							<img src="resource/imagens/checkedB.png" alt="checked" class="checked">
-							<span>Lorem ipsum dolor sit amet.</span>
-						</div>
-                    </div>
-					<a href="#" class="botao">READ MORE</a>
-                </div>
-				<div class="conteudoNot">Conteudo 3</div>
-			</div>
-		</section>
-	</section>
+
+	<div ng-view></div>
+
 	<footer class="rodapeint">
 		<div class="rodape">
 			<div class="rodapeContatos">
