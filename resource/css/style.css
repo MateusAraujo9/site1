@@ -239,15 +239,15 @@ nav ul a{
 }
 .rodapeint{
     width: 100%;
-    height: 360px;
+    height: 330px;
     background-color: #444549;
     margin-top: 50px;
 }
 .rodape{
     margin: auto;
     max-width: 1170px;
-    height: 350px;
-    padding-top: 45px;
+    height: 320px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
