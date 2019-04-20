@@ -1,21 +1,32 @@
 <div class="fullContainer">
     <div class="conteudoContainer">
-        <h1 class="breadcrumb-item active cadastroTitle">Cadastro MECER</h1>
-        <div class="form-group row">
-            <label for="cadastroNome" class="col-sm-1 col-form-label">Nome:</label>
-            <input type="text" id="cadastroNome" class="form-control col-md-8">
-        </div>
-        <div class="form-group row">
-            <label for="cadastroEmail" class="col-sm-1 col-form-label">Email:</label>
-            <input type="email" id="cadastroEmail" class="form-control col-md-8">
-        </div>
-        <div class="form-group row">
-            <label for="cadastroTurma" class="col-sm-1 col-form-label">Turma:</label>
-            <input type="text" id="cadastroTurma" class="form-control col-md-8">
-        </div>
-        <div class="form-group row">
-            <label for="cadastroNasc" class="col-sm-1 col-form-label">Nasc.:</label>
-            <input type="date" id="cadastroNasc" class="form-control col-md-2">
-        </div>
+        <form action="cadastro.php" method="POST">
+            <h1 class="breadcrumb-item active cadastroTitle">Cadastro MECER</h1>
+            <div class="form-group row">
+                <label for="cadastroNome" class="col-sm-1 col-form-label">Nome:</label>
+                <input type="text" id="cadastroNome" name="cadastroNome" class="form-control col-md-8">
+            </div>
+            <div class="form-group row">
+                <label for="cadastroEmail" class="col-sm-1 col-form-label">Email:</label>
+                <input type="email" id="cadastroEmail" name="cadastroEmail" class="form-control col-md-8">
+            </div>
+            <div class="form-group row">
+                <label for="cadastroTurma" class="col-sm-1 col-form-label">Turma:</label>
+                <input type="text" id="cadastroTurma" name="cadastroTurma" class="form-control col-md-8">
+            </div>
+            <div class="form-group row">
+                <label for="cadastroNasc" class="col-sm-1 col-form-label">Nasc.:</label>
+                <input type="date" id="cadastroNasc" name="cadastroNasc" class="form-control col-md-2">
+                <label for="cadastroFone" class="col-sm-1 col-form-label">Telefone: </label>
+                <input type="text" id="cadastroFone" name="cadastroFone" class="form-control col-md-5">
+            </div>
+            <div class="form-group row">
+                <label for="cadastroCpf" class="col-sm-1 col-form-label">CPF:</label>
+                <input type="text" id="cadastroCpf" name="cadastroCpf" class="form-control col-md-2">
+                <label for="cadastroIdeia" class="col-sm-1 col-form-label">Ideia:</label>
+                <textarea class="form-control col-md-5" id="cadastroIdeia" name="cadastroIdeia" rows="3"></textarea>
+            </div>
+            <input type="submit" value="CADASTRAR" class="btn btn-primary btn-lg btn-block">
+        </form>
     </div>
 </div>
