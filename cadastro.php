@@ -1,4 +1,5 @@
 <?php
+require 'DAO/dbconection.php';
 
 $cadastroNome = isset($_POST['cadastroNome'])?$_POST['cadastroNome']:"Nome";
 $cadastroEmail = isset($_POST['cadastroEmail'])?$_POST['cadastroEmail']:"Email";
@@ -14,7 +15,22 @@ print($cadastroNome."<br/>"
     .$cadastroNasc."<br/>"
     .$cadastroFone."<br/>"
     .$cadastroCpf."<br/>"
-    .$cadastroIdeia);
+    .$cadastroIdeia."<br/><br/><br/>");
+
+/*
+$sql = "INSERT INTO alunos (nome, email, turma, dtnasc, telefone, cpf, ideia) VALUES ('$cadastroNome', '$cadastroEmail', '$cadastroTurma', '$cadastroNasc', '$cadastroFone', '$cadastroCpf','$cadastroIdeia')";
+$sql = $pdo->query($sql);
+*/
+
+try{
+    $sql = "INSERT INTO alunos (nome, email, turma, dtnasc, telefone, cpf, ideia) VALUES ('$cadastroNome', '$cadastroEmail', '$cadastroTurma', '$cadastroNasc', '$cadastroFone', '$cadastroCpf','$cadastroIdeia')";
+    $sql = $pdo->query($sql);
+}catch (PDOException $e){
+    echo "Erro no comando ".$e->getMessage();
+}catch (Exception $e){
+    echo "Erro inesperado ".$e->getMessage();
+}
+
 
 //Descomentar essa linha para redirecionar o caboclo para a pagina de cadastro logo apos cadastrar
 //header("location: http://site1.pc/#!/cadastro");
