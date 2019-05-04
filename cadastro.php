@@ -23,7 +23,7 @@ $sql = $pdo->query($sql);
 */
 
 try{
-    $sql = "INSERT INTO alunos (nome, email, turma, dtnasc, telefone, cpf, ideia) VALUES ('$cadastroNome', '$cadastroEmail', '$cadastroTurma', '$cadastroNasc', '$cadastroFone', '$cadastroCpf','$cadastroIdeia')";
+    $sql = "INSERT INTO academicos (nome, email, turma, dtnasc, telefone, cpf) VALUES ('$cadastroNome', '$cadastroEmail', '$cadastroTurma', '$cadastroNasc', '$cadastroFone', '$cadastroCpf')";
     $sql = $pdo->query($sql);
 }catch (PDOException $e){
     echo "Erro no comando ".$e->getMessage();
