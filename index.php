@@ -25,8 +25,25 @@
 				<a href="#/!"><li class="check" onclick="trocaCor(this)">HOME</li></a>
 				<a href="#!sobre"><li onclick="trocaCor(this)">SOBRE</li></a>
 				<a href="#!ideias"><li onclick="trocaCor(this)">IDEIAS</li></a>
-				<a href="#!academicos"><li onclick="trocaCor(this)">ACADEMICOS</li></a>
-				<a href="#!cadastro"><li onclick="trocaCor(this)">CADASTRO</li></a>
+				<a href="#!cadastro" id="cadastro"><li onclick="trocaCor(this)">CADASTRO</li></a>
+				<a href="#!academicos" id="login"><li onclick="trocaCor(this)">LOGIN</li></a>
+			</ul>
+			<ul id="campoLogin">
+				<!--
+				<span>Bem Vindo(a) </span>
+				<span>Meu nome!</span>
+				<span class="btn-primary sair">Sair</span>
+				-->
+				<?php
+					if ($_COOKIE['logado'] == 'true'){
+    					echo "<span>Bem Vindo(a) </span>";
+						echo "<span>".base64_decode($_COOKIE['nomeMecer'])."!</span>";
+						echo "<a class='btn-primary sair' href='logout.php'>Sair</a>";
+						echo "<script> login(true)</script>";
+					}else{
+                        echo "<script> login(false)</script>";
+                    }
+				?>
 			</ul>
 		</nav>
 	</nav>

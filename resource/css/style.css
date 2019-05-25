@@ -80,6 +80,18 @@ body{
 	height: 60px;
 	line-height: 60px;
 	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sair{
+	padding: 5px;
+	font-size: 12px;
+	border-radius: 2px;
+	margin-left: 20px;
+}
+.sair:hover{
+	cursor: pointer;
 }
 .nav ul{
 	padding-left: 0;
@@ -299,4 +311,14 @@ nav ul a{
 /*Cadastro*/
 .cadastroTitle{
 	padding: 10px 0px;
+}
+
+
+/*Academicos*/
+.formLogin{
+	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
