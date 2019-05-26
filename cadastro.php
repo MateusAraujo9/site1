@@ -7,7 +7,7 @@ $cadastroTurma = isset($_POST['cadastroTurma'])?$_POST['cadastroTurma']:"Turma";
 $cadastroNasc = isset($_POST['cadastroNasc'])?$_POST['cadastroNasc']:"01/01/2000";
 $cadastroFone = isset($_POST['cadastroFone'])?$_POST['cadastroFone']:"00000000000";
 $cadastroCpf = isset($_POST['cadastroCpf'])?$_POST['cadastroCpf']:"11111111111";
-//$cadastroIdeia = isset($_POST['cadastroIdeia'])?$_POST['cadastroIdeia']:"texto ideia";
+//$cadastroIdeia = isset($_POST['cadastroIdeia'])?$_POST['cadastroIdeia']:"texto ideia"; //opção desabilidade
 $usuario = isset($_POST['usuario'])?$_POST['usuario']:$cadastroNome;
 $senha = isset($_POST['senha'])?md5($_POST['senha']):"sem senha";
 print($cadastroNome."<br/>"

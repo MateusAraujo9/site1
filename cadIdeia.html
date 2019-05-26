@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="resource/css/bootstrap.css">
+<link rel="stylesheet" href="resource/css/style.css">
+<div class="fullContainer">
+    <div class="conteudoContainer">
+        <form action="cadIdeia.php" method="post">
+            <a href="#!ideias" class="btn btn-primary btnVoltar"><img src="resource/imagens/voltar-seta2.png" alt="voltar" class="imgVoltar">Voltar</a>
+            <h1 class="breadcrumb-item active cadastroTitle">Cadastro Ideias MECER</h1>
+
+            <div class="form-group row">
+                <label for="nomeIdeia" class="col-sm-2 col-form-label">Nome da Ideia:</label>
+                <input type="text" id="nomeIdeia" name="nomeIdeia" class="form-control col-md-8">
+            </div>
+            <div class="form-group">
+                <label for="objetivoIdeia">Objetivo</label>
+                <textarea class="form-control" id="objetivoIdeia" name="objetivoIdeia" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="justificativaIdeia">Justificativa</label>
+                <textarea class="form-control" id="justificativaIdeia" name="justificativaIdeia" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="informacoesIdeia">Informações</label>
+                <textarea class="form-control" id="informacoesIdeia" name="informacoesIdeia" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="caracteristicasIdeia">Características</label>
+                <textarea class="form-control" id="caracteristicasIdeia" name="caracteristicasIdeia" rows="2"></textarea>
+            </div>
+            <input type="submit" value="CADASTRAR" class="btn btn-primary btn-lg btn-block">
+        </form>
+    </div>
+</div>

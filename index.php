@@ -8,6 +8,12 @@
 	<script src="resource/js/angular.js"></script>
 	<script src="resource/js/angular-route.js"></script>
 	<script type="text/javascript" src="resource/js/script.js"></script>
+
+    <!--Bootstrap-->
+    <script src="resource/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="resource/js/popper.min.js"></script>
+    <script src="resource/js/bootstrap.min.js"></script>
+
 </head>
 <body ng-app="meuApp">
 	<header class="topint">
@@ -29,11 +35,7 @@
 				<a href="#!academicos" id="login"><li onclick="trocaCor(this)">LOGIN</li></a>
 			</ul>
 			<ul id="campoLogin">
-				<!--
-				<span>Bem Vindo(a) </span>
-				<span>Meu nome!</span>
-				<span class="btn-primary sair">Sair</span>
-				-->
+                <!--se estiver logado vai mostrar o nome do usuario logado e o botão de sair-->
 				<?php
 					if ($_COOKIE['logado'] == 'true'){
     					echo "<span>Bem Vindo(a) </span>";

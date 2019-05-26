@@ -3,9 +3,10 @@ app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {templateUrl: "home.html"})
         .when("/sobre", {templateUrl: "sobre.html"})
-        .when("/ideias", {templateUrl: "ideias.html"})
+        .when("/ideias", {templateUrl: "ideias.php"})
         .when("/academicos", {templateUrl: "academicos.html"})
         .when("/cadastro", {templateUrl: "cadastro.html"})
+        .when("/cadIdeia", {templateUrl: "cadIdeia.html"})
 });
 
 

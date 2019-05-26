@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	font-family: Arial;
+	font-family: Arial, SansSerif;
 }
 .clear{
 	clear: none;
@@ -15,6 +15,7 @@ body{
 	height: 115px;
 	margin: auto;
 	display: flex;
+    justify-content: space-between;
 }
 .top a{
 	text-decoration: none;
@@ -310,7 +311,7 @@ nav ul a{
 
 /*Cadastro*/
 .cadastroTitle{
-	padding: 10px 0px;
+	padding: 10px 0;
 }
 
 
@@ -321,4 +322,24 @@ nav ul a{
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+}
+
+/*CadIdeia*/
+.btnVoltar{
+	margin-top: 10px;
+}
+
+.imgVoltar{
+	margin-right: 5px;
+}
+
+/*Ideias*/
+.accordion{
+	margin-top: 50px;
+}
+.btnCadIdeia{
+	margin-top: 10px;
+}
+.tituloIdeia{
+	color: #62c0e4; /*#62c0e4 #6c757d*/
 }
