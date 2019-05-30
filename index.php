@@ -7,12 +7,9 @@
 	<link rel="stylesheet" href="resource/css/bootstrap.css">
 	<script src="resource/js/angular.js"></script>
 	<script src="resource/js/angular-route.js"></script>
-	<script type="text/javascript" src="resource/js/script.js"></script>
+	<script src="resource/js/script.js"></script>
 
-    <!--Bootstrap-->
-    <script src="resource/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="resource/js/popper.min.js"></script>
-    <script src="resource/js/bootstrap.min.js"></script>
+    
 
 </head>
 <body ng-app="meuApp">
