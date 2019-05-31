@@ -33,7 +33,11 @@ function login(statusLogin){
 
 function validar(dom,tipo){
     switch(tipo){
+<<<<<<< HEAD
         case'num':var regex=/[A-Za-z- -*+.,=´~^`[}çÇ\]{ÂÃÁâãáÊÉêéÎÌîíÔÕÓôõóÛÚûú!@#$%¨ïöäëïÄËÏÖÜ¬&*°ªº]/g;break;
+=======
+        case'num':var regex=/[A-Za-z- -*+.,=´~^`[}çÇ\]{]/g;break;
+>>>>>>> 55feb2a74082a6b4701e181c1c45eaefe94e4fa6
         case'text':var regex=/\d/g;break;
     }
     dom.value=dom.value.replace(regex,"");
