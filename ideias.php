@@ -6,7 +6,9 @@
 
         <!--botão para cadastrar só aparece se academico estiver logado-->
         <?php
-            if ($_COOKIE['logado'] == 'true'){
+            $logado = isset($_COOKIE['logado'])?$_COOKIE['logado']:'false';
+
+            if ($logado == 'true'){
                 echo "<a href=\"#!cadIdeia\" class=\"btn btn-dark btnCadIdeia\">+ Cadastrar Ideia</a>";
                 $idAcademico = base64_decode($_COOKIE['idMecer']);
                 $sql = "SELECT I.nome, I.objetivo, I.justificativa, I.informacoes, I.caracteristicas FROM ideias I JOIN ideia_academico IA ON I.id = IA.idideia WHERE IA.idacademico = '$idAcademico'";
@@ -46,6 +48,8 @@
                 }
 
                 echo "</div>";
+            }else{
+                echo "Desconectado";
             }
         ?>
 </div>

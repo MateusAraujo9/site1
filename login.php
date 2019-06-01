@@ -18,10 +18,11 @@ try{
                 setcookie("nomeMecer", base64_encode($user['nome']), time()+18000);
                 setcookie("logado", "true", time()+18000);
             }else{
-                print "Senha está errada";
+                echo "<script>alert('Usuário ou Senha Incorreta'); location.href=\"http://site1.pc/#!/academicos\"</script>>";
             }
         }
     }else{
+        echo "<script>alert('Usuário ou Senha Incorreta'); location.href=\"http://site1.pc/#!/academicos\"</script>>";
         print "usuário não encontrado";
     }
 
@@ -29,4 +30,4 @@ try{
     echo "Erro inesperado ".$e->getMessage();
 }
 
-header("location: http://site1.pc/#!");
+echo "<script>location.href=\"http://site1.pc/#!\"</script>>";
