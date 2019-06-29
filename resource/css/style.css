@@ -312,6 +312,7 @@ nav ul a{
 /*Cadastro*/
 .cadastroTitle{
 	padding: 10px 0;
+	color: #6c757d;
 }
 
 
@@ -341,6 +342,7 @@ nav ul a{
 	margin-top: 10px;
 }
 .tituloIdeia{
+<<<<<<< HEAD
 	color: #62c0e4; /*#62c0e4 #6c757d*/
 }
 
@@ -349,3 +351,7 @@ nav ul a{
 	color: #6c757d;
 	padding: 10px 0 10px 0;
 }
+=======
+	color: #62c0e4;
+}
+>>>>>>> 6183349a11cbc6cfa7bbfbb531994301fd7a1096
