@@ -23,7 +23,7 @@
 			<a href="http://site1.pc"><div class="topleft"><span class="logo">Mecer</span> Company</div></a>
 			<div class="topright">
 				<div class="tel"><img src="resource\imagens\telephone.png">800-2345-6789</div>
-				<div class="logoFrase">One of our representative will happily contact you within 24 hours. For urgent needs call us at</div>
+				<div class="logoFrase">Entre em contato para cadastrar a sua instituição e fazer parte desse projeto</div>
 			</div>
 		</div>
 	</header>
@@ -60,7 +60,7 @@
 			<div class="rodapeContatos">
 				<div class="rodapeColuna">
 					<div class="rodapeLinha">
-						<img src="resource/imagens/localization.png" alt="localization" class="rodapeBotao">
+                        <img src="resource/imagens/localization.png" alt="localization" class="rodapeBotao">
 						<p class="rodapeTexto cinza">4578 Marmora Road, Glasgow<br/>D04 89GR</p>
 					</div>
 					<div class="rodapeLinha">
@@ -80,11 +80,11 @@
                 </div>
                 <div class="rodapeColuna">
                     <div class="rodapeLinha">
-                        <img src="resource/imagens/facebook.png" alt="facebook" class="rodapeBotao">
+                        <a href="http://www.facebook.com.br" target="_blank"><img src="resource/imagens/facebook.png" alt="facebook" class="rodapeBotao"></a>
                         <p class="rodapeTexto cinza">Follow on Facebook</p>
                     </div>
                     <div class="rodapeLinha">
-                        <img src="resource/imagens/twitter.png" alt="twitter" class="rodapeBotao">
+                        <a href="https://twitter.com" target="_blank"><img src="resource/imagens/twitter.png" alt="twitter" class="rodapeBotao"></a>
                         <p class="rodapeTexto cinza">Follow on Twitter</p>
                     </div>
                 </div>
