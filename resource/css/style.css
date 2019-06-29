@@ -343,3 +343,9 @@ nav ul a{
 .tituloIdeia{
 	color: #62c0e4; /*#62c0e4 #6c757d*/
 }
+
+/*SobreMecer*/
+.tituloSobre{
+	color: #6c757d;
+	padding: 10px 0 10px 0;
+}
